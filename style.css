@@ -2,13 +2,22 @@
 /* font-family: "Inter", sans-serif; */
 
 /* Variáveis do projeto */
-:root {
+:root[data-theme="light"] {
   --text: #0c0212;
-  --text-low-opacity: #0C021290;
-  --text-placeholder: #0C021240;
   --background: #fdfbfe;
   --primary: #ae27ec;
+  --text-low-opacity: #0C021290;
+  --text-placeholder: #0C021240;
   --border: #00000040;
+}
+
+:root[data-theme="dark"] {
+  --text: #f7edfd;
+  --background: #030104;
+  --primary: #9913d8;
+  --text-low-opacity: #F3FDED90;
+  --text-placeholder: #F3FDED64;
+  --border: #ffffff40;
 }
 
 /* Formatar estilos padrões do navegador */
