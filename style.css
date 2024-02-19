@@ -2,6 +2,8 @@
 /* font-family: "Inter", sans-serif; */
 
 /* Variáveis do projeto */
+
+/* Variáveis para o tema claro = [data-theme="light"] */
 :root[data-theme="light"] {
   --text: #0c0212;
   --background: #fdfbfe;
@@ -11,6 +13,7 @@
   --border: #00000040;
 }
 
+/* Variáveis para o tema escuro = [data-theme="dark"] */
 :root[data-theme="dark"] {
   --text: #f7edfd;
   --background: #030104;
