@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+/* Variáveis do projeto */
+:root {
+  --text: #0c0212;
+  --text-low-opacity: #0C021290;
+  --text-placeholder: #0C021240;
+  --background: #fdfbfe;
+  --primary: #ae27ec;
+  --border: #00000040;
+}
+
+/* Formatar estilos padrões do navegador */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* Aplicar a fonte Inter a todo estilo */
+  font-family: "Inter", sans-serif;
+  /* definir cor dos textos do documento */
+  color: var(--text);
+}
+
+/* Define o estilo de todos os focus do documento(utilize tab para visualizar o focus) */
+:focus { outline: 2px solid var(--primary); }
+
+/* Estilização geral de todos os "a" do documento */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Classes para diminuir utilizações repetitivas */
+.center {
+  display: flex;
+  align-items: center;
+}
+
+/* Classes para diminuir utilizações repetitivas */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: var(--background);
+  height: 100vh;
+  justify-content: center;
+}
+
+.login-container {
+  width: 340px;
+  gap: 48px;
+  background: var(--background);
+  border-radius: 8px;
+  border: solid 1px var(--border);
+  padding: 48px 24px 24px;
+}
+
+.login-container > h1 {
+  letter-spacing: 1px;
+}
+
+/* Bolinha azul ao lado do titulo "Login" */
+.login-container > h1::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 4px;
+  display: block;
+  background: var(--primary);
+  position: absolute;
+  margin-left: -29px; 
+}
+
+/* Colocando a virgula os dois itens selecionados receberam a atribuição de estilo */
+.login-form, .login-fields { gap: 24px; }
+
+.field > label { font-size: 16px; }
+
+.field > input {
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px var(--border);
+  background: var(--background);
+  font-size: 16px;
+}
+
+.field > input::placeholder { color: var(--text-placeholder); }
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.login-options > div, .field {
+  gap: 4px;
+}
+
+.login-button {
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  color: var(--background);
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: var(--text);
+  transition: 0.3s;
+}
+
+.login-create-account {
+  text-align: center;
+  font-size: 12px;
+}
+
+.login-create-account { color: var(--text-low-opacity); }
