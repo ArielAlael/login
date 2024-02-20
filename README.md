@@ -1,5 +1,7 @@
 # Projeto de Estudo: Introdução ao HTML e CSS
 
+[](docs/img.png)
+
 Este é um documento HTML e CSS simples, criado como parte de um projeto de estudo para aprender os conceitos básicos de HTML e CSS. Ele foi criado para ser apresentado a amigos as tecnologias HTML e CSS, servindo como uma introdução acessível.
 
 ## Conteúdo do Documento
