@@ -87,9 +87,14 @@ body {
 }
 
 /* Colocando a virgula os dois itens selecionados receberam a atribuição de estilo */
-.login-form, .login-fields { gap: 24px; }
+.login-form,
+.login-fields {
+  gap: 24px;
+}
 
-.field > label { font-size: 16px; }
+.field > label {
+  font-size: 16px;
+}
 
 .field > input {
   padding: 12px;
@@ -99,7 +104,9 @@ body {
   font-size: 16px;
 }
 
-.field > input::placeholder { color: var(--text-placeholder); }
+.field > input::placeholder {
+  color: var(--text-placeholder);
+}
 
 .login-options {
   display: flex;
@@ -131,4 +138,6 @@ body {
   font-size: 12px;
 }
 
-.login-create-account { color: var(--text-low-opacity); }
+.login-create-account {
+  color: var(--text-low-opacity);
+}
