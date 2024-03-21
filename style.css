@@ -110,6 +110,10 @@ body {
   gap: 4px;
 }
 
+input[type=checkbox] {
+   accent-color: var(--primary);
+}
+
 .login-button {
   background: var(--primary);
   border: none;
